@@ -1,0 +1,101 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    margin:0px;
+}
+.left{
+    box-sizing: border-box;
+    width: 25%;
+    height: 100vh;
+    background-color : rgb(0,0,0);
+    float: left;
+    color: white;
+    padding:20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-image{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+
+}
+
+.bio{
+    text-align: center;
+}
+
+.name{
+    font: size 19px;
+}
+
+.spidy-button{
+    padding: 10px 20px ;
+    border-radius: 30px;
+    border:none;
+}
+.right{
+    width: 75%;
+    height: 100vh;
+    background-color: rgb(240, 76, 76);
+    float: left;
+    color:white;
+    overflow: auto;
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    margin:10px;
+    padding:10px;
+    color:black;
+    border-radius: 5px;
+}
+
+ .nav-container h2{
+     margin:0;
+
+ }
+.nav a{
+    color:gray;
+    text-decoration: none;
+    margin: 0 10px;
+    
+}
+
+.nav a:hover{
+    color:black;
+    transition: ease-in-out 500ms;
+    font-weight: 500;
+}
+
+.right-content{
+    margin:20px 10px;
+}
+
+.right-h1 a{
+    color:rgb(0,0,0);
+    text-decoration: none;
+    margin: 0 10px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 500px){
+    .left{
+        float: none;
+        width:100%;
+    }
+    .right{
+        float:none;
+        width:100%;
+        height: auto;
+    }
+}
